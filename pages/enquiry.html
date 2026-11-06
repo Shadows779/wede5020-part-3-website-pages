@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Enquiries | Apex Net Cafe</title>
+    <meta name="author" content="Nikhiel Nishaylin Pooren" />
+
+    <meta name="keywords" content="Apex Net Cafe enquiry, coffee prices, cafe enquiry, tea prices, hot drinks, Wi-Fi" />
+    <meta name="description" content="Submit an enquiry to Apex Net Cafe for pricing, menu questions, coffee and tea options, and café services in Johannesburg." />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital@0;1&display=swap" rel="stylesheet" />
+
+    <link rel="canonical" href="https://apexnetcafe.co.za/pages/enquiry.html" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Enquiries | Apex Net Cafe" />
+    <meta property="og:description" content="Ask Apex Net Cafe about coffee, tea, menu items, Wi-Fi, and other café services in Johannesburg." />
+    <meta property="og:url" content="https://apexnetcafe.co.za/pages/enquiry.html" />
+    <meta property="og:site_name" content="Apex Net Cafe" />
+</head>
+<body>
+    <h1>Apex Net Cafe</h1>
+
+    <!-- main header and navbar -->
+    <header id="top" class="site-header">
+      <br>      
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="product.html">Products</a></li>
+            </ul> 
+        <br>  
+    </header>
+   
+<main>
+    <h1 class="title">
+        Want a quote fill this out  
+    </h1>
+    <!-- enquiry form so clients can ask for a quote and pick what they need -->
+    <form id="enquiry-form">
+        <fieldset>
+            <legend> Enquiries </legend>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required><br><br>
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890"><br><br>
+            </div>
+            <!-- dropdown list to choose the service -->
+            <div>
+                <label for="services">Services needed</label>
+                <select id="services" name="services" required>
+                <option value="Deselected">Select Product </option>
+                <option value="Coffee">Coffee</option>
+                <option value="Tea">Tea</option>
+                <option value="Hot Drinks">Hot Drinks</option>
+                <option value="In-store service">In-store service</option>
+                <option value="Complaint">Complaint</option>
+                <option value="Prices">Prices</option>
+                <option value="Wi-Fi">Wi-Fi</option>
+                <option value="Menu">Menu</option>
+                </select>
+            </div>
+         
+            <br >
+
+            <div>
+            <label for="feedback"> Description:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+                <a id="mailto-link" href="mailto:info@apexnetcafe.co.za" class="button-link">Email Us</a>
+            </div>
+
+        </fieldset>
+    </form>
+
+    <br>
+    <br>
+    
+    <p id="form-message" role="status" aria-live="polite"></p>
+
+    <script src="../js/index.js"></script>
+</main>
+<!-- footer with back to top and copyright -->
+<footer>
+<a href="#top">Back to top</a>
+<p>2026 Apex Cafe. All rights reserved.</p>
+</footer>
+</body>
+</html>

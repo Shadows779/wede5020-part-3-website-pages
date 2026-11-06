@@ -1,0 +1,119 @@
+@import "./style/style.css";
+
+:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #8a4f34;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(138, 79, 52, 0.18);
+}
+
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+legend,
+label {
+  font-family: "Merriweather", serif;
+}
+
+.product-search {
+  margin: 0 0 30px;
+}
+
+.search {
+  position: relative;
+  width: min(100%, 760px);
+  margin: 0 auto;
+}
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6e4d3a;
+  font-size: 1.75rem;
+  pointer-events: none;
+  line-height: 1;
+}
+
+.search-input {
+  width: 100%;
+  min-height: 56px;
+  padding: 14px 16px 14px 52px;
+  border: 1px solid #d9c2a2;
+  border-radius: 12px;
+  background: #fff;
+  font-size: 1.05rem;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.search-input:focus {
+  border-color: #8a4f34;
+  box-shadow: 0 0 0 4px rgba(138, 79, 52, 0.15);
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+.image-grid figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: #f8f3ee;
+  border: 1px solid rgba(116, 86, 62, 0.12);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.image-grid figcaption {
+  margin-top: auto;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4;
+  padding: 12px 14px 16px;
+}
+
+.image-grid .product-image {
+  display: block;
+  width: 100%;
+  min-height: 200px;
+  height: 220px;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 12px 12px 0 0;
+}
+
+.search-empty {
+  display: none;
+  margin: 12px 0 0;
+  text-align: center;
+  color: #6e4d3a;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .image-grid,
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+legend {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
